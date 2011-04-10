@@ -21,10 +21,10 @@ alias egrep='egrep --color=auto'              # show differences in colour
 alias fgrep='fgrep --color=auto'              # show differences in colour
 #
 # Some shortcuts for different directory listings
-alias ls='ls -hF --color=auto'                 # classify files in colour
+alias ls='ls -hF --color'
 alias dir='ls --color=auto --format=vertical'
 # alias vdir='ls --color=auto --format=long'
-alias ll='ls -Altr'                             # long list
+alias ll='ls -hFAlt --color | less -R '                             # long list
 # alias la='ls -A'                              # all but . and ..
 # alias l='ls -CF'                              #
 alias vi=vim
@@ -39,5 +39,5 @@ alias vi=vim
 
 alias e='cygstart /cygdrive/c/"Program Files"/e/cmd/e.exe'
 
-# Shotrcuts
-alias downloads='/cygdrive/c/Users/Andrey/Downloads'
+# Display PATH in readable format
+alias PATH="echo $PATH | tr ':' '\n' | less -R"
