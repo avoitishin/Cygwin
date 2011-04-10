@@ -1,5 +1,8 @@
 [alias]
 	co = checkout
+	st = -p status
+	cm = commit
+	w = whatchanged
 	last = cat-file commit HEAD
 [core]
 	pager = less
@@ -22,7 +25,7 @@
 	remote = green
 [color "status"]
 	added = yellow
-	changed = green
+	changed = green bold
 	untracked = cyan
 [user]
 	name = Andrey Voitishin
