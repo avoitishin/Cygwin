@@ -22,7 +22,7 @@
 	new = green bold
 	commit = yellow bold
 [color "branch"]
-	current = yellow reverse
+	current = white yellow 
 	local = yellow
 	remote = green
 [color "status"]
