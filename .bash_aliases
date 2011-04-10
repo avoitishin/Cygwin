@@ -24,7 +24,7 @@ alias fgrep='fgrep --color=auto'              # show differences in colour
 alias ls='ls -hF --color'
 alias dir='ls --color=auto --format=vertical'
 # alias vdir='ls --color=auto --format=long'
-alias ll='ls -hFAlt --color | less '                             # long list
+alias ll='ls -hFAltr --color '                             # long list
 # alias l='ls -CF'                              #
 
 alias vi='vim'
