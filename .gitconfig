@@ -1,0 +1,5 @@
+[alias]
+	co = checkout
+[user]
+	name = Andrey Voitishin
+	email = a.voitishin@gmail.com
