@@ -26,6 +26,7 @@ alias dir='ls --color=auto --format=vertical'
 # alias vdir='ls --color=auto --format=long'
 alias ll='ls -hFAltr --color '                             # long list
 # alias l='ls -CF'                              #
+alias less='less -R -B -c -h4 -i -M -q -x4'
 
 alias vi='vim'
 alias e='cygstart "$ucprograms"/e/cmd/e.exe'
