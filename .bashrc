@@ -64,13 +64,13 @@ export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
 # HISTIGNORE is a colon-delimited list of patterns which should be excluded.
 # The '&' is a special pattern which suppresses duplicate entries.
 export HISTIGNORE=$'[ \t]*:&:[fb]g:exit'
-export HISTIGNORE=$'[ \t]*:&:[fb]g:exit:ls' # Ignore the ls command as well
+export HISTIGNORE=$'[ \t]*:&:[fb]g:exit:ls:ll' # Ignore the ls and ll commands as well
 export HISTSIZE=1000
 export HISTFILESIZE=1000
 export EDITOR=vi
 #
 # Whenever displaying the prompt, write the previous line to disk
-# export PROMPT_COMMAND="history -a"
+export PROMPT_COMMAND="history -a"
 
 # Aliases
 #
@@ -95,5 +95,3 @@ if [ -f "${HOME}/.bash_functions" ]; then
   source "${HOME}/.bash_functions"
 fi
 
-# Prompt
-export PS1='\[\e[1;30m\][\w]\[\e[m\] \[\e[1;33m\]\$\[\e[m\] \[\e[1;37m\]'

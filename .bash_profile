@@ -21,9 +21,12 @@ if [ -f "${HOME}/.bashrc" ] ; then
 fi
 
 # Set PATH so it includes user's private bin if it exists
-# if [ -d "${HOME}/bin" ] ; then
-#   PATH="${HOME}/bin:${PATH}"
-# fi
+if [ -d "${HOME}/bin" ] ; then
+  PATH="${HOME}/bin:${PATH}"
+fi
+
+cprograms="C:\Program Files"
+ucprograms=`cygpath -u "$cprograms"`
 
 # Set MANPATH so it includes users' private man if it exists
 # if [ -d "${HOME}/man" ]; then
@@ -35,5 +38,6 @@ fi
 #   INFOPATH="${HOME}/info:${INFOPATH}"
 # fi
 
-# Less options
-LESS="-B -c -h4 -i -M -q -x4"
+# Environment
+LESS="-B -c -h4 -i -M -q -R -x4"
+PS1='\[\e[1;30m\][\w]\[\e[m\] \[\e[1;33m\]\$\[\e[m\] \[\e[1;37m\]'

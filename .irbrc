@@ -67,12 +67,12 @@ begin
 		:close_array => :light_red,
 		:comma => :white,
 		:refers => :white,
-		:string => :light_cyan,
+		:string => :light_blue,
 		:open_string => :yellow,
 		:close_string => :yellow,
 		:number => :yellow,
-		:object_addr_prefix => :light_blue,
-		:object_line_prefix => :light_blue
+		:object_addr_prefix => :light_cyan,
+		:object_line_prefix => :light_cyan
 	})
 	Wirble::Colorize.colors = colors
 
