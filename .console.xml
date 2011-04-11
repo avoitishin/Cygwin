@@ -35,7 +35,7 @@
 	<behavior>
 		<copy_paste copy_on_select="1" clear_on_copy="1" no_wrap="1" trim_spaces="1" copy_newline_char="0"/>
 		<scroll page_scroll_rows="0"/>
-		<tab_highlight flashes="3" stay_highligted="1"/>
+		<tab_highlight flashes="3" stay_highligted="0"/>
 	</behavior>
 	<hotkeys use_scroll_lock="1">
 		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="83" command="settings"/>
