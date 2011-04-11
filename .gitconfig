@@ -26,7 +26,7 @@
 	local = yellow
 	remote = green
 [color "status"]
-	added = yellow
+	added = yellow bold
 	changed = green bold
 	untracked = cyan
 [user]
