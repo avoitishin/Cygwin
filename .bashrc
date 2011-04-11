@@ -31,6 +31,9 @@
 # Use case-insensitive filename globbing
 shopt -s nocaseglob
 #
+# Store multi-line commands as single command in history
+shopt -s cmdhist
+#
 # Make bash append rather than overwrite the history on disk
 # shopt -s histappend
 #
@@ -46,7 +49,7 @@ shopt -s cdspell
 # COMP_CVS_REMOTE=1
 #
 # Define to avoid stripping description in --option=description of './configure --help'
-# COMP_CONFIGURE_HINTS=1
+COMP_CONFIGURE_HINTS=1
 #
 # Define to avoid flattening internal contents of tar files
 # COMP_TAR_INTERNAL_PATHS=1
@@ -63,8 +66,8 @@ export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
 # Ignore some controlling instructions
 # HISTIGNORE is a colon-delimited list of patterns which should be excluded.
 # The '&' is a special pattern which suppresses duplicate entries.
-export HISTIGNORE=$'[ \t]*:&:[fb]g:exit'
-export HISTIGNORE=$'[ \t]*:&:[fb]g:exit:ls:ll' # Ignore the ls and ll commands as well
+# export HISTIGNORE=$'[ \t]*:&:[fb]g:exit'
+export HISTIGNORE="[ \t]*:&:[fb]g:exit:ls:ll"
 export HISTSIZE=1000
 export HISTFILESIZE=1000
 export EDITOR=vi
