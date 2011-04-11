@@ -29,7 +29,7 @@ alias ll='ls -hFAltr --color '                             # long list
 alias less='less -R -B -c -h4 -i -M -q -x4'
 
 alias vi='vim'
-alias e='cygstart "$ucprograms"/e/cmd/e.exe'
+alias e='cygstart "$pfiles"/e/cmd/e.exe'
 alias rspec='bundle exec rspec'
 
 # Display PATH in readable format

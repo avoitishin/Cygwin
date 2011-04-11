@@ -15,6 +15,9 @@
 
 # User dependent .bash_profile file
 
+# Set PATH
+PATH="/usr/local/bin:/usr/bin"
+
 # source the users bashrc if it exists
 if [ -f "${HOME}/.bashrc" ] ; then
   source "${HOME}/.bashrc"
@@ -25,8 +28,8 @@ if [ -d "${HOME}/bin" ] ; then
   PATH="${HOME}/bin:${PATH}"
 fi
 
-cprograms="C:\Program Files"
-ucprograms=`cygpath -u "$cprograms"`
+#cprograms="C:\Program Files"
+pfiles=`cygpath -u "C:\Program Files"`
 
 # Set MANPATH so it includes users' private man if it exists
 # if [ -d "${HOME}/man" ]; then
