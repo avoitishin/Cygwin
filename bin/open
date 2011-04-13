@@ -1,0 +1,23 @@
+#!/usr/bin/ruby
+
+unless ARGV.length == 1
+	puts "usage: open [file|dir]"
+	exit
+end
+
+input_file = ARGV[0]
+pfiles = '/cygdrive/c/"Program Files"'
+
+if File.exists?(input_file)
+	if File.directory?(input_file)
+		`cygstart #{pfiles}/FreeCommander/FreeCommander.exe -C -R="#{input_file}"`
+	else
+		case File.extname(input_file)
+			when '.html', '.htm' 
+				`cygstart /cygdrive/c/Users/Andrey/AppData/Local/Google/Chrome/Application/chrome.exe #{input_file}`
+			else 
+				puts "unknown extension"
+				exit
+			end
+	end
+end
