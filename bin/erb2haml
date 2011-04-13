@@ -3,6 +3,6 @@
 for erb_file in `find . -name *.html.erb`; do
 	if [[ -f $erb_file ]]; then
 		name=${erb_file%.html.erb};
-		html2haml $erb_file > $name.haml;
+		html2haml $erb_file > $name.html.haml;
 	fi
 done
